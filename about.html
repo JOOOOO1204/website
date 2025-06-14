@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Abundant Grace Minister</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      background-color: #f7f9fc;
+    }
+
+    .about-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 1s ease;
+    }
+
+    .about-section h2 {
+      color: #2c3e50;
+      font-size: 28px;
+      margin-bottom: 10px;
+      border-left: 5px solid #1abc9c;
+      padding-left: 10px;
+    }
+
+    .about-section p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #ecf0f1;
+      border-radius: 12px;
+      padding: 20px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 40px;
+      color: #1abc9c;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+
+    .card span {
+      display: block;
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+
+    .timeline {
+      margin-top: 40px;
+      border-left: 3px solid #1abc9c;
+      padding-left: 20px;
+    }
+
+    .event {
+      margin-bottom: 20px;
+    }
+
+    .event h4 {
+      margin: 0;
+      color: #1abc9c;
+    }
+
+    .event small {
+      display: block;
+      margin-bottom: 5px;
+      color: #888;
+    }
+
+    .quote {
+      font-style: italic;
+      background: #f9f9f9;
+      border-left: 4px solid #1abc9c;
+      padding: 15px;
+      margin: 30px 0;
+      color: #333;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .stats .stat {
+      background: #1abc9c;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1;
+      margin: 5px;
+    }
+
+    .stat h3 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .stat p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navWrapper"></div>
+
+  <div class="about-section">
+    <h2>Who We Are</h2>
+    <p>
+      Abundant Grace Minister is a spirit-led, Christ-centered fellowship rooted in biblical truth. We serve communities, nurture faith, and reflect the love of Jesus through every action we take.
+    </p>
+
+    <h2>Mission</h2>
+    <p>
+      To proclaim the Gospel, restore lives through God’s grace, and build a strong community founded on love, service, and faith.
+    </p>
+
+    <h2>Vision</h2>
+    <p>
+      To be a global beacon of hope and healing where lives are transformed and empowered by the presence of God.
+    </p>
+
+    <h2>What We Believe</h2>
+    <p>
+      We believe in the Trinity, the infallible Word of God, the redemptive power of Christ, and the active presence of the Holy Spirit. We stand on grace, not works.
+    </p>
+
+    <div class="quote">"Grace is not a license to sin — it is the power to overcome sin." – Pastor Elijah</div>
+
+    <h2>Our Journey</h2>
+    <div class="timeline">
+      <div class="event">
+        <h4>2012 – Founded</h4>
+        <small>New Delhi, India</small>
+        <p>The church began as a small prayer fellowship in a home with just six members.</p>
+      </div>
+      <div class="event">
+        <h4>2015 – First Community Center</h4>
+        <small>South Extension</small>
+        <p>Expanded into a rented hall and started outreach programs including food drives and literacy classes.</p>
+      </div>
+      <div class="event">
+        <h4>2021 – Online Ministry Launched</h4>
+        <small>Global</small>
+        <p>Started live-streaming services and Bible study for believers around the world.</p>
+      </div>
+    </div>
+
+    <h2>Leadership</h2>
+    <div class="team">
+      <div class="card">
+        <i class="fas fa-user-tie"></i>
+        <h3>Rev. Elijah Matthew</h3>
+        <span>Lead Pastor</span>
+      </div>
+      <div class="card">
+        <i class="fas fa-music"></i>
+        <h3>Sis. Rachel Joy</h3>
+        <span>Worship Director</span>
+      </div>
+      <div class="card">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Br. Isaac Paul</h3>
+        <span>Outreach Coordinator</span>
+      </div>
+      <div class="card">
+        <i class="fas fa-child"></i>
+        <h3>Maria Samuel</h3>
+        <span>Children’s Ministry</span>
+      </div>
+    </div>
+
+    <h2>Impact Stats</h2>
+    <div class="stats">
+      <div class="stat">
+        <h3>3,500+</h3>
+        <p>Souls Reached</p>
+      </div>
+      <div class="stat">
+        <h3>120+</h3>
+        <p>Volunteers</p>
+      </div>
+      <div class="stat">
+        <h3>45</h3>
+        <p>Weekly Programs</p>
+      </div>
+    </div>
+
+    <h2>Join the Mission</h2>
+    <p>
+      Whether online or on-ground, there’s a place for you in our mission. Join hands with us as we serve, worship, and build together.
+    </p>
+  </div>
+
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navWrapper").innerHTML = data;
+
+        const topBar = document.getElementById("topBar");
+        const progressBar = document.getElementById("progressBar");
+
+        topBar.addEventListener("scroll", () => {
+          const scrollLeft = topBar.scrollLeft;
+          const maxScrollLeft = topBar.scrollWidth - topBar.clientWidth;
+          const scrollPercent = (scrollLeft / maxScrollLeft) * 100;
+          progressBar.style.width = scrollPercent + "%";
+        });
+      });
+  </script>
+
+</body>
+</html>
