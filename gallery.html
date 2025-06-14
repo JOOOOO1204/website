@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abundant Grace Minister</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div id="navWrapper"></div>
+
+  <div class="content">
+    <h1>Gallery</h1>
+    <p>photos</p>
+  </div>
+
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navWrapper").innerHTML = data;
+
+        const topBar = document.getElementById("topBar");
+        const progressBar = document.getElementById("progressBar");
+
+        topBar.addEventListener("scroll", () => {
+          const scrollLeft = topBar.scrollLeft;
+          const maxScrollLeft = topBar.scrollWidth - topBar.clientWidth;
+          const scrollPercent = (scrollLeft / maxScrollLeft) * 100;
+          progressBar.style.width = scrollPercent + "%";
+        });
+      });
+  </script>
+
+</body>
+</html>
