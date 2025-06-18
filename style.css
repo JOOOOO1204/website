@@ -4,6 +4,23 @@ body {
   background: #f4f4f4;
 }
 
+.icon{
+  height: 10;
+  width: 10;
+  background-color: white;
+  color: #34495e;
+  margin: 5px;
+  padding: 5px 5px;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
 .scroll-wrapper {
   position: relative;
 }

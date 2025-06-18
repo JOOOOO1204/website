@@ -35,11 +35,7 @@
       gap: 20px;
     }
 
-    .gallery-item {
-      text-align: center;
-    }
-
-    .gallery-item img {
+    .gallery-grid img {
       width: 100%;
       height: 200px;
       object-fit: cover;
@@ -49,16 +45,8 @@
       cursor: pointer;
     }
 
-    .gallery-item img:hover {
+    .gallery-grid img:hover {
       transform: scale(1.03);
-    }
-
-    .gallery-item span {
-      display: block;
-      margin-top: 8px;
-      font-size: 15px;
-      color: #34495e;
-      text-transform: capitalize;
     }
 
     .modal {
@@ -97,8 +85,15 @@
 
   <div class="gallery-container">
     <h2>Church Moments</h2>
-    <div class="gallery-grid" id="galleryGrid">
-      <!-- Images will be inserted here by JS -->
+    <div class="gallery-grid">
+      <img src="https://source.unsplash.com/400x300/?church,worship" alt="Gallery Image 1" />
+      <img src="https://source.unsplash.com/400x301/?bible,group" alt="Gallery Image 2" />
+      <img src="https://source.unsplash.com/400x302/?community,church" alt="Gallery Image 3" />
+      <img src="https://source.unsplash.com/400x303/?prayer,family" alt="Gallery Image 4" />
+      <img src="https://source.unsplash.com/400x304/?pastor,preaching" alt="Gallery Image 5" />
+      <img src="https://source.unsplash.com/400x305/?choir,singing" alt="Gallery Image 6" />
+      <img src="https://source.unsplash.com/400x306/?mission,team" alt="Gallery Image 7" />
+      <img src="https://source.unsplash.com/400x307/?baptism,water" alt="Gallery Image 8" />
     </div>
   </div>
 
@@ -107,7 +102,6 @@
   </div>
 
   <script>
-    // Load shared navbar
     fetch("navbar.html")
       .then(res => res.text())
       .then(data => {
@@ -124,40 +118,15 @@
         });
       });
 
-    // Auto load images
-    const imageList = [
-      "prayer_day.jpg",
-      "sunday_worship.jpg",
-      "mission_trip.jpg",
-      "youth_meet.jpg",
-      "baptism_ceremony.jpg",
-      "worship_night.jpg"
-    ];
-
-    const gallery = document.getElementById("galleryGrid");
-
-    imageList.forEach(filename => {
-      const name = filename.replace(/\.[^/.]+$/, "").replace(/[_-]/g, " ");
-      const div = document.createElement("div");
-      div.className = "gallery-item";
-      div.innerHTML = `
-        <img src="gallery-photo/${filename}" alt="${name}" />
-        <span>${name}</span>
-      `;
-      gallery.appendChild(div);
-    });
-
-    // Lightbox modal
+    // Lightbox Modal
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImage");
-
-    gallery.addEventListener("click", e => {
-      if (e.target.tagName === "IMG") {
-        modalImg.src = e.target.src;
+    document.querySelectorAll(".gallery-grid img").forEach(img => {
+      img.addEventListener("click", () => {
+        modalImg.src = img.src;
         modal.classList.add("show");
-      }
+      });
     });
-
     modal.addEventListener("click", () => modal.classList.remove("show"));
   </script>
 

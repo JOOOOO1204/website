@@ -20,7 +20,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
 
         
         if self.path == '/':
-            self.path = '/test1.html' 
+            self.path = '/index.html' 
 
         
         return super().do_GET()

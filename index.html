@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abundant Grace Minister</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f6fa;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #1abc9c, #16a085);
+      color: white;
+      padding: 100px 20px 80px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.95;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .tiles {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+      
+    }
+
+    .tile {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+
+      justify-content: center;
+      padding: 30px 20px;
+      transition: 0.3s ease;
+      cursor: pointer;
+      flex-grow: 1;
+    }
+
+    .tile:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+    }
+
+    .tile i {
+      font-size: 36px;
+      color: #16a085;
+      margin-bottom: 15px;
+    }
+
+    .tile h3 {
+      font-size: 18px;
+      color: #2c3e50;
+      margin: 0;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- <div id="navWrapper"></div> -->
+
+  <section class="hero">
+    <h1>Abundant Grace Minister</h1>
+    <p>Welcome to a place of worship, service, and community. Join us in faith and purpose.</p>
+  </section>
+
+  <section class="tiles">
+    <div class="tile"><a  href="gallery.html">
+      <i class="fas fa-image"></i>
+      <h3>Gallery</h3>
+    </a></div>
+    <div class="tile"><a  href="about.html">
+      <i class="fas fa-church"></i>
+      <h3>About Us</h3>
+    </a></div>
+    <div class="tile"><a  href="testimony.html">
+      <i class="fas fa-comments"></i>
+      <h3>Testimony</h3>
+    </a></div>
+    <div class="tile"><a  href="community.html">
+      <i class="fas fa-hands-helping"></i>
+      <h3>Community Service</h3>
+    </a></div>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 Abundant Grace Minister. All rights reserved.
+  </div>
+
+  <script>
+    // fetch("navbar.html")
+    //   .then(res => res.text())
+    //   .then(data => {
+    //     document.getElementById("navWrapper").innerHTML = data;
+
+    //     const topBar = document.getElementById("topBar");
+    //     const progressBar = document.getElementById("progressBar");
+
+    //     topBar.addEventListener("scroll", () => {
+    //       const scrollLeft = topBar.scrollLeft;
+    //       const maxScrollLeft = topBar.scrollWidth - topBar.clientWidth;
+    //       const scrollPercent = (scrollLeft / maxScrollLeft) * 100;
+    //       progressBar.style.width = scrollPercent + "%";
+    //     });
+    //   });
+  </script>
+
+</body>
+</html>
